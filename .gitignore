@@ -102,3 +102,10 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+bin
+
+# custom ignores
+.idea
+geckodriver.log
+.ipynb_checkpoints
+
