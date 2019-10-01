@@ -9,6 +9,10 @@ def driver():
     driver.close()
 
 
+@pytest.mark.parametrize(
+    "fact",
+    [("26 April 1986"), ("US Spies")],
+)
 def test_chernobyl_fact(driver, fact):
     driver.get("https://wikipedia.org")
     search_field = driver.find_element_by_id("searchInput")
