@@ -2,7 +2,7 @@ import pytest
 from selenium import webdriver
 
 
-@pytest.fixture
+@pytest.fixture(scope='module')
 def driver():
     driver = webdriver.Firefox(executable_path="bin/geckodriver")
     yield driver
